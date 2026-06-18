@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  expo-app:
+    build: .
+    container_name: Evidencia-Dev-Ops-expo-app
+    ports:
+      - "8081:8081"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - EXPO_PACKAGER_PROXY_URL=http://10.3.146.46:8081
+      - REACT_NATIVE_PACKAGER_HOSTNAME=10.3.146.46
+    stdin_open: true
+    tty: true
+    command: ["npx", "expo", "start", "--go", "--host", "lan"]
