@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   expo-app:
+    image: node:99-alpine
     build: .
     container_name: Evidencia-Dev-Ops-expo-app
     ports:
