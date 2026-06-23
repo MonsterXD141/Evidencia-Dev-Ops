@@ -10,10 +10,10 @@ export default function App() {
       </TouchableOpacity>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#121212', alignItems: 'center', justifyContent: 'center' },
-  btn: { backgroundColor: '#00ff88', padding: 20, borderRadius: 10 },
+  container: { flex: 1, backgroundColor: '#121212', alignItems: 'center', justifyContent: 'center', padding: 20 },
+  btn: { backgroundColor: '#00ff88', paddingVertical: 18, paddingHorizontal: 35, borderRadius: 12 },
   btnText: { color: '#000', fontWeight: 'bold', fontSize: 18 }
 });
